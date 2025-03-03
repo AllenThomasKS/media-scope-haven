@@ -24,7 +24,7 @@ const Header = () => {
           {/* Logo */}
           <a href="/" className="flex items-center">
             <span className="font-heading font-bold text-xl md:text-2xl text-white">
-              MediaScope
+              The Rush Capital
             </span>
           </a>
           

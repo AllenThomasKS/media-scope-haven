@@ -325,7 +325,7 @@ const Index = () => {
         <div className="container px-6 mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
-              <h2 className="text-xl font-heading font-bold text-white">MediaScope</h2>
+              <h2 className="text-xl font-heading font-bold text-white">The Rush Capital</h2>
               <p className="text-sm text-white/60 mt-2">Your window to the world</p>
             </div>
             
@@ -338,7 +338,7 @@ const Index = () => {
           </div>
           
           <div className="mt-8 pt-8 border-t border-white/10 text-center text-sm text-white/40">
-            © {new Date().getFullYear()} MediaScope. All rights reserved.
+            © {new Date().getFullYear()} The Rush Capital. All rights reserved.
           </div>
         </div>
       </footer>
