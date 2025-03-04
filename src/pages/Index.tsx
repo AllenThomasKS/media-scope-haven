@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useRef } from 'react';
 import { 
   Film, 
@@ -24,12 +23,10 @@ const Index = () => {
   const tickerRef = useRef<HTMLDivElement>(null);
   const entertainmentRef = useRef<HTMLDivElement>(null);
   
-  // Animation effect on load
   useEffect(() => {
     setIsLoaded(true);
   }, []);
   
-  // Sample data
   const breakingNews = [
     "Breaking: New climate policy announced by global leaders",
     "Tech giant releases revolutionary AI assistant",
@@ -157,23 +154,21 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      {/* Banner and Breaking News */}
       <div className={`relative overflow-hidden transition-opacity duration-700 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
         <div className="relative h-[50vh] md:h-[60vh] bg-gradient-to-r from-[#0f172a] to-[#1e3a8a] flex items-center justify-center">
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=1200&auto=format&fit=crop')] bg-cover opacity-10"></div>
           <div className="container px-6 mx-auto z-10">
             <div className="max-w-3xl mx-auto text-center animate-fade-in">
               <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight text-white mb-4">
-                Your Window to the <span className="text-primary">World</span>
+                <span className="text-primary">Discover. Engage. Inspire.</span>
               </h1>
               <p className="text-xl md:text-2xl text-white/80 mb-6">
-                Discover stories that matter, delivered with clarity and insight
+                Stories that matter, delivered with clarity and insight
               </p>
             </div>
           </div>
         </div>
         
-        {/* Breaking News Ticker */}
         <div className="bg-primary/10 border-y border-white/10 py-3 overflow-hidden relative">
           <div className="flex items-center absolute left-0 top-0 bottom-0 z-10 bg-gradient-to-r from-primary/20 to-transparent px-6 md:px-10">
             <div className="bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-md mr-4">
@@ -203,7 +198,6 @@ const Index = () => {
       </div>
       
       <main className="container px-6 mx-auto py-12 md:py-16">
-        {/* Entertainment Section */}
         <section className="mb-16 md:mb-24 animate-fade-in animate-delay-75">
           <div className="flex justify-between items-center mb-6">
             <h2 className="section-title flex items-center">
@@ -265,7 +259,6 @@ const Index = () => {
           </div>
         </section>
         
-        {/* News Updates Section */}
         <section className="mb-16 md:mb-24 animate-fade-in animate-delay-150">
           <h2 className="section-title flex items-center">
             <Newspaper className="mr-2" size={24} /> 
@@ -283,7 +276,6 @@ const Index = () => {
           </div>
         </section>
         
-        {/* Informative & Educational Content */}
         <section className="mb-16 md:mb-24 animate-fade-in animate-delay-300">
           <h2 className="section-title flex items-center">
             <BookOpen className="mr-2" size={24} /> 
@@ -301,7 +293,6 @@ const Index = () => {
           </div>
         </section>
         
-        {/* Engagement Section */}
         <section className="animate-fade-in animate-delay-500">
           <h2 className="section-title flex items-center">
             <MessageSquare className="mr-2" size={24} /> 
@@ -320,13 +311,12 @@ const Index = () => {
         </section>
       </main>
       
-      {/* Footer */}
       <footer className="bg-[#0f172a] py-12 border-t border-white/10">
         <div className="container px-6 mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
               <h2 className="text-xl font-heading font-bold text-white">The Rush Capital</h2>
-              <p className="text-sm text-white/60 mt-2">Your window to the world</p>
+              <p className="text-sm text-white/60 mt-2">Discover. Engage. Inspire.</p>
             </div>
             
             <div className="flex space-x-6">
